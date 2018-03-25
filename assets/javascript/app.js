@@ -38,7 +38,7 @@ $("#addTrainBtn").on("click", function() {
     var firstTrain = $("#firstTrainInput").val().trim();
     var frequency = $("#frequencyInput").val().trim();
 
-    
+    //make sure forms are filled in
     if (trainName == "") {
         alert('Enter a train name.');
         return false;
