@@ -26,66 +26,73 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-    <div class="card">
-    <div class="card-header text-center"><h3>Island of Sodor's Current Train Times</h3></div>
-    <div class="card-body">
-    <table class="table text-center" id='trainTable'>
-        <thead>
-            <tr>
-                <th>Train Name</th>
-                <th>Destination</th>
-                <th>Frequency (minutes)</th>
-                <th>Next Arrival</th>
-                <th>Minutes Away</th>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h3>Island of Sodor's Current Train Times</h3>
+                    </div>
+                    <div class="card-body">
+                        <table class="table text-center" id='trainTable'>
+                            <thead>
+                                <tr>
+                                    <th>Train Name</th>
+                                    <th>Destination</th>
+                                    <th>Frequency (minutes)</th>
+                                    <th>Next Arrival</th>
+                                    <th>Minutes Away</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    </div>
-</div>
-</div>
-</div>
-<br>
+    <br>
 
-<div class="container">
+    <div class="container">
         <div class="row">
             <div class="col-12">
-    <div class="card" id="trainForm">
-            <div class="card-header text-center"><h3>Add Your Train</h3><img src="assets/images/CGI_James.png"></img><img src="assets/images/thomas.png"></img><img src="assets/images/Daisyhead-onCGIpromo.png"></img></div>
-            <div class="card-body">
-    <form>
-        <div class="form-group">
-            <label for="">Train Name:</label>
-            <input type="text" class="form-control" id="trainNameInput">
-        </div>
-        <div class="form-group">
-            <label for="">Destination:</label>
-            <input type="text" class="form-control" id="destinationInput">
-        </div>
-        <div class="form-group">
-            <label class='active' for="">First Train (HH:mm Military Time):</label>
-            <input class="form-control" id="firstTrainInput">
-        </div>
-        <div class="form-group">
-            <label for="">Frequency (minutes):</label>
-            <input type="number" class="form-control" id="frequencyInput">
-        </div>
-        <button type="submit" class="btn btn-primary" id="addTrainBtn">Add</button>
-    </form>
+                <div class="card" id="trainForm">
+                    <div class="card-header text-center">
+                        <h3>Add Your Train</h3>
+                        <img src="assets/images/CGI_James.png"></img>
+                        <img src="assets/images/thomas.png"></img>
+                        <img src="assets/images/Daisyhead-onCGIpromo.png"></img>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="">Train Name:</label>
+                                <input type="text" class="form-control" id="trainNameInput">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Destination:</label>
+                                <input type="text" class="form-control" id="destinationInput">
+                            </div>
+                            <div class="form-group">
+                                <label class='active' for="">First Train (HH:mm Military Time):</label>
+                                <input class="form-control" id="firstTrainInput">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Frequency (minutes):</label>
+                                <input type="number" class="form-control" id="frequencyInput">
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="addTrainBtn">Add</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-</div>
-</div>
 
-<br>
+    <br>
     <div class="container-fluid text-center">
-            <footer class="footer">
-                <p>Dan Sasaki</p>
-            </footer>
-        </div>
+        <footer class="footer">
+            <p>Dan Sasaki</p>
+        </footer>
+    </div>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>

@@ -16,13 +16,15 @@ body{
 .card-header{
     display: inline-block;
     clear: both;
-    background-color: lightgray;
+    background-color: rgb(224, 224, 224);
 }
 
 .footer{
     margin: 50px;
+    color: lightgray;
 }
 h1{
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 110px;
+    
 }
