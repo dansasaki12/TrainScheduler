@@ -8,55 +8,85 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
     <title>Train Schedule</title>
-   
+
 </head>
 
 <body>
     <div class="jumbotron text-center">
-                <h1><img src="assets/images/TophamHatt.png"></img>Train Schedule<img src="assets/images/TophamHattflip.png"></img></h1>
-            </div>
+        <h1>
+            <img src="assets/images/TophamHatt.png"></img>Sir Topham Hatt's Train Schedule
+            <img src="assets/images/TophamHattflip.png"></img>
+        </h1>
+    </div>
 
-                <h2>Current Train Schedule</h2>
-                <table class="table text-center" id='trainTable'>
-                    <thead>
-                        <tr>
-                            <th>Train Name</th>
-                            <th>Destination</th>
-                            <th>Frequency (minutes)</th>
-                            <th>Next Arrival</th>
-                            <th>Minutes Away</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+    <div class="card">
+    <div class="card-header text-center"><h2>Current Train Schedule</h2></div>
+    <div class="card-body">
+    <table class="table text-center" id='trainTable'>
+        <thead>
+            <tr>
+                <th>Train Name</th>
+                <th>Destination</th>
+                <th>Frequency (minutes)</th>
+                <th>Next Arrival</th>
+                <th>Minutes Away</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+<br>
 
-      
-                <h3>Add Your Train</h3>
-                <form>
-                    <div class="form-group">
-                        <label for="">Train Name:</label>
-                        <input type="text" class="form-control" id="trainNameInput">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Destination:</label>
-                        <input type="text" class="form-control" id="destinationInput">
-                    </div>
-                    <div class="form-group">
-                        <label class='active' for="">First Train (HH:mm Military Time):</label>
-                        <input  class="form-control" id="firstTrainInput">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Frequency (minutes):</label>
-                        <input type="number" class="form-control" id="frequencyInput">
-                    </div>
-                    <button type="submit" class="btn btn-info" id="addTrainBtn">Submit</button>
-                </form>
-            
+<div class="container">
+        <div class="row">
+            <div class="col-12">
+    <div class="card" id="trainForm">
+            <div class="card-header text-center"><h3>Add Your Train</h3><img src="assets/images/CGI_James.png"></img><img src="assets/images/thomas.png"></img><img src="assets/images/Daisyhead-onCGIpromo.png"></img></div>
+            <div class="card-body">
+    <form>
+        <div class="form-group">
+            <label for="">Train Name:</label>
+            <input type="text" class="form-control" id="trainNameInput">
+        </div>
+        <div class="form-group">
+            <label for="">Destination:</label>
+            <input type="text" class="form-control" id="destinationInput">
+        </div>
+        <div class="form-group">
+            <label class='active' for="">First Train (HH:mm Military Time):</label>
+            <input class="form-control" id="firstTrainInput">
+        </div>
+        <div class="form-group">
+            <label for="">Frequency (minutes):</label>
+            <input type="number" class="form-control" id="frequencyInput">
+        </div>
+        <button type="submit" class="btn btn-info" id="addTrainBtn">Submit</button>
+    </form>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<br>
+    <div class="container-fluid text-center">
+            <footer class="footer">
+                <p>Dan Sasaki</p>
+            </footer>
+        </div>
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
