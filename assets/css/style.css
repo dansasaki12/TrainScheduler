@@ -1,6 +1,13 @@
 body{
     min-width: 990px;
 }
+body{
+    background-image: url("../../assets/images/backgroundthomas.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    
+}
+
 
 .btn{
     color: red;
@@ -15,4 +22,7 @@ body{
 .footer{
     margin: 50px;
 }
-
+h1{
+    text-align: center;
+    padding-bottom: 50px;
+}
