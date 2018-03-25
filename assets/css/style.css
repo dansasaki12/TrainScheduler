@@ -2,7 +2,9 @@ body{
     min-width: 990px;
 }
 
-
+.btn{
+    color: red;
+}
 
 .card-header{
     display: inline-block;
