@@ -1,3 +1,4 @@
+//firebase info
 var config = {
     apiKey: "AIzaSyC5iziIZ6biItSliGDg0J3BPoB3pNeTrz0",
     authDomain: "mochimandb.firebaseapp.com",
@@ -29,7 +30,7 @@ database.ref().on("value", function(snapshot) {
 
 });
 
-
+//form information
 $("#addTrainBtn").on("click", function() {
 
     var trainName = $("#trainNameInput").val().trim();
@@ -56,7 +57,7 @@ $("#addTrainBtn").on("click", function() {
     }
 
     
-    
+    //moment js info
     var firstTrainConverted = moment(firstTrain, "hh:mm").subtract("1, years");
     
     var difference = currentTime.diff(moment(firstTrainConverted), "minutes");
