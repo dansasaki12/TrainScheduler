@@ -34,7 +34,7 @@ $("#addTrainBtn").on("click", function() {
 
     var trainName = $("#trainNameInput").val().trim();
     var destination = $("#destinationInput").val().trim();
-    var firstTrain = $("#firstInput").val().trim();
+    var firstTrain = $("#firstTrainInput").val().trim();
     var frequency = $("#frequencyInput").val().trim();
 
     
@@ -78,7 +78,7 @@ $("#addTrainBtn").on("click", function() {
 
     $("#trainNameInput").val("");
     $("#destinationInput").val("");
-    $("#firstInput").val("");
+    $("#firstTrainInput").val("");
     $("#frequencyInput").val("");
 
     return false;
