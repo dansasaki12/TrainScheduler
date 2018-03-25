@@ -57,7 +57,7 @@ $("#addTrainBtn").on("click", function() {
     }
 
     
-    //moment js info
+    //moment js 
     var firstTrainConverted = moment(firstTrain, "hh:mm").subtract("1, years");
     
     var difference = currentTime.diff(moment(firstTrainConverted), "minutes");
